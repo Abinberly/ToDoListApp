@@ -10,6 +10,8 @@ import UIKit
 class ViewController: UIViewController {
 
     var cellModels: [ToDoListTableViewCellModel] = []
+    var tasks: [Task] = []
+    
     @IBOutlet weak var tblToDoList: UITableView?
     @IBOutlet weak var txtTasksField: UITextField?
     
