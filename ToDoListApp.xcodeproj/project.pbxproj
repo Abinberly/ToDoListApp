@@ -16,6 +16,7 @@
 		9A1653B32D2A6B2D00A5A519 /* ToDoListModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A1653B12D2A6B2D00A5A519 /* ToDoListModel.xcdatamodeld */; };
 		9A1653B52D2A6D0300A5A519 /* ToDoListTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1653B42D2A6D0300A5A519 /* ToDoListTableViewCellModel.swift */; };
 		9A1653B72D2A6DEE00A5A519 /* ToDoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1653B62D2A6DEE00A5A519 /* ToDoListTableViewCell.swift */; };
+		9AA790B02D2AE40300C43423 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA790AF2D2AE40300C43423 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		9A1653B22D2A6B2D00A5A519 /* ToDoListModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoListModel.xcdatamodel; sourceTree = "<group>"; };
 		9A1653B42D2A6D0300A5A519 /* ToDoListTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListTableViewCellModel.swift; sourceTree = "<group>"; };
 		9A1653B62D2A6DEE00A5A519 /* ToDoListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListTableViewCell.swift; sourceTree = "<group>"; };
+		9AA790AF2D2AE40300C43423 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9AB264F12D2AA4AD00E54007 /* ToDoListModelV2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoListModelV2.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,7 @@
 				9A1653B42D2A6D0300A5A519 /* ToDoListTableViewCellModel.swift */,
 				9A1653B62D2A6DEE00A5A519 /* ToDoListTableViewCell.swift */,
 				9A1653822D2A64F600A5A519 /* ViewController.swift */,
+				9AA790AF2D2AE40300C43423 /* Extensions.swift */,
 				9A1653842D2A64F600A5A519 /* Main.storyboard */,
 				9A1653892D2A64F600A5A519 /* LaunchScreen.storyboard */,
 				9A1653872D2A64F600A5A519 /* Assets.xcassets */,
@@ -157,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A1653832D2A64F600A5A519 /* ViewController.swift in Sources */,
+				9AA790B02D2AE40300C43423 /* Extensions.swift in Sources */,
 				9A16537F2D2A64F600A5A519 /* AppDelegate.swift in Sources */,
 				9A1653B72D2A6DEE00A5A519 /* ToDoListTableViewCell.swift in Sources */,
 				9A1653B52D2A6D0300A5A519 /* ToDoListTableViewCellModel.swift in Sources */,
@@ -388,12 +393,14 @@
 		9A1653B12D2A6B2D00A5A519 /* ToDoListModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				9AB264F12D2AA4AD00E54007 /* ToDoListModelV2.xcdatamodel */,
 				9A1653B22D2A6B2D00A5A519 /* ToDoListModel.xcdatamodel */,
 			);
-			currentVersion = 9A1653B22D2A6B2D00A5A519 /* ToDoListModel.xcdatamodel */;
+			currentVersion = 9AB264F12D2AA4AD00E54007 /* ToDoListModelV2.xcdatamodel */;
 			name = ToDoListModel.xcdatamodeld;
 			path = "/Users/abinberly/Library/Autosave Information/ToDoListApp/ToDoListApp/ToDoListModel.xcdatamodeld";
 			sourceTree = "<group>";
+			usesTabs = 0;
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */

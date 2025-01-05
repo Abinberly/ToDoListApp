@@ -15,7 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // Core Data Stack Setup
     lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "YourModelName")
+        let container = NSPersistentContainer(name: "ToDoListModel")
+        let storeURL = container.persistentStoreDescriptions.first?.url
+        do {
+            if let storeURL = storeURL {
+                try FileManager.default.removeItem(at: storeURL)
+            }
+        } catch {
+            print("Failed to delete store: \(error)")
+        }
         container.loadPersistentStores { storeDescription, error in
             if let error = error as NSError? {
                 fatalError("Unresolved error \(error), \(error.userInfo)")

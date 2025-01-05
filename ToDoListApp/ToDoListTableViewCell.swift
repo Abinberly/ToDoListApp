@@ -15,7 +15,8 @@ class ToDoListTableViewCell: UITableViewCell {
         }
     }
     @IBOutlet weak var lblTasks: UILabel?
-    @IBOutlet weak var lblPriority: UILabel?
+    @IBOutlet weak var vwPriorityIndicator: UIView?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -27,8 +28,8 @@ class ToDoListTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     func configureCell() {
-        lblTasks?.text = "Task"
-        lblPriority?.text = "high"
+        lblTasks?.text = cellModel.getTasksName()
+        vwPriorityIndicator?.backgroundColor = cellModel.getCellColor()
     }
 
 }
